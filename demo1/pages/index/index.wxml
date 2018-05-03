@@ -1,0 +1,12 @@
+
+ <view class='container'> 
+  <view class='wrapper'>
+    <view class='userIfo'>
+      <image src="{{src}}" class='img'></image>
+      <text class='name'>feir</text>
+    </view>
+    <view class='txt'>
+      <text>First DEMO!</text>
+    </view>
+  </view>
+ </view> 

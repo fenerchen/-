@@ -1,0 +1,54 @@
+/**index.wxss**/
+/* .userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.b{
+  color: red;
+} */
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid; */
+  /* background: #b3d4db; */
+  /* height: 100%; */
+}
+.img{
+  margin-top: 60rpx;
+  width:128rpx;
+  height:128rpx;
+  border-radius: 50%;
+  background-size:cover;
+}
+.name{
+  display: block;
+  text-align: center;
+
+}
+.txt{
+margin-top:200rpx;
+border:1px solid #405f80;
+height: 80rpx;
+width:300rpx;
+border-radius: 6rpx;
+line-height: 80rpx;
+text-align: center;
+color: green;
+}
