@@ -23,20 +23,26 @@
   display: flex;
   justify-content: flex-start;
   height: 50rpx;
-  /* border: 1px solid; */
+   /* border: 1px solid;  */
    background: #fff;
   /* border-top:1rpx solid #ededed; */
   border-bottom:1rpx solid #ededed;
-  font-size: 28rpx;  
+  font-size: 34rpx;  
   padding-bottom: 10rpx;
+  align-items: center;
 }
+/* .inline text{
+  display: flex;
+  align-items: center;
+  line-height: 50rpx;
+} */
 .news-img{
   width: 750rpx;
   height: 340rpx;
 }
 .small-img{
-  width: 42rpx;
-  height: 30rpx;
+  width: 43rpx;
+  height: 34rpx;
   margin-right: 8rpx;
 }
 .header-img{

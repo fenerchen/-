@@ -1,11 +1,14 @@
 /**index.wxss**/
 page{
   background: #b3d4db;
+ 
 }
 .wrapper{
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* border: 1px solid; */
 
 }
 
