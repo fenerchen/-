@@ -1,0 +1,99 @@
+
+.detail-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-img {
+  position: relative;
+}
+
+.detail-img {
+  width: 750rpx;
+  height: 420rpx;
+}
+
+.music-img {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  /* top: 0rpx;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto; */
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  /* 垂直居中的几种写法（现用的是定宽不定宽都可以） */
+  opacity: 0.5;
+  border-radius: 20%;
+}
+
+.author-inf {
+  padding: 20rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.author-inf text {
+  margin-right: 20rpx;
+  font-size: 30rpx;
+}
+
+.header-img {
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  margin-right: 20rpx;
+  margin-left: 10rpx;
+}
+
+.title {
+  padding-top: 20rpx;
+  padding-left: 30rpx;
+  font-size: 42rpx;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bolder;
+  letter-spacing: 6rpx;
+}
+
+.others-inf {
+  height: 70rpx;
+  position: relative;
+  padding: 30rpx;
+}
+
+.aligin-line {
+  border: 1px solid #ededed;
+  position: absolute;
+  width: 650rpx;
+  top: 60rpx;
+}
+
+.share-comment image {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  position: absolute;
+  right: 130rpx;
+}
+
+.share-comment image:first-child {
+  right: 30rpx;
+}
+
+.news-content {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.news-content {
+  font-size: 38rpx;
+  letter-spacing: 4rpx;
+  font-family: "楷体";
+  text-indent: 80rpx;
+}

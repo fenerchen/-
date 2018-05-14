@@ -1,0 +1,10 @@
+<template name="starsTemplate">
+ <view class='stars-container'>
+      <view class='stars' wx:for="{{score.starsNum}}" wx:key="*this">
+        <image wx:if="{{item}}" src='/img/star.png'></image>
+        <image wx:else src='/img/stars0.png'></image>
+      </view>
+      <text class='stars-score'>{{score.score}}</text>
+  </view>
+
+</template>

@@ -1,0 +1,28 @@
+<import src='./movieList/movielistTemplate.wxml' />
+<import src='./movie/movieTemplate.wxml' />
+<import src='./more/moreMovieTemplate/moreMovieTemplate.wxml' />
+
+
+<view class='search'>
+  <icon type='search' size='13' color='#405f80' class='search-icon'></icon>
+  <input type='text' placeholder="后来的我们" placeholder-class='placeholder' bindfocus='onBindFocus' bindconfirm='onBindConfirm' bindchange='onchange' value="{{inputValue}}"></input>
+  <icon wx:if="{{searchPanel}}" type='clear' size='16' color='#405f80' class='clear-icon' bindtap='onClearTap'></icon>
+  
+</view>
+  <view class='wraper' wx:if="{{containerShow}}">
+  <view wx:for="{{movieList}}" wx:key="{{*this}}">
+    <view wx:if="{{item.header=='正在热映'}}">
+      <template is="movieListTemplate" data="{{...item}}" />
+    </view>
+    <view wx:elif="{{item.header=='即将上映'}}">
+      <template is="movieListTemplate" data="{{...item}}" />
+    </view>
+    <view wx:else="{{item.header=='口碑电影'}}">
+      <template is="movieListTemplate" data="{{...item}}" />
+    </view>
+  </view>
+</view>  
+
+ <view class='search-pannel' wx:if="{{searchPanel}}">
+  <template is="moreMovieTemplate" data="{{moreMovieList}}"/>
+</view> 

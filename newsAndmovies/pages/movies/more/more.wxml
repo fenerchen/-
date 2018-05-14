@@ -1,0 +1,12 @@
+<!-- <import src='../movie/movieTemplate.wxml' /> -->
+<import src='./moreMovieTemplate/moreMovieTemplate.wxml' />
+ <!-- <scroll-view scroll-y='{{scrolly}}' scroll-x="false" scroll-with-animation="true" bindscrolltolower='onScrolltoLower' bindscrolltoupper="onScrolltoUpper" style='height:{{scrollHeight}}px'>  -->
+<!-- <template name="moreMovieTemplate">
+  <view class='moreMovies-list'>
+    <view wx:for="{{moreMovieList}}" wx:key="{{*this}}">
+      <template is="movieTemplate" data="{{...item}}" />
+    </view>
+  </view>
+</template> -->
+ <!-- </scroll-view>  -->
+ <template is="moreMovieTemplate" data="{{moreMovieList}}"/>

@@ -1,0 +1,15 @@
+<import src='../movie/movieTemplate.wxml' />
+
+<template name="movieListTemplate">
+  <view class='movielist-container'>
+    <view class='movie-header'>
+      <text>{{header}}</text>
+      <text catchtap='onMoreTap' data-type="{{header}}">更多 ></text>
+    </view>
+    <view class='movies-list'>
+      <view wx:for="{{movies}}" wx:key="{{*this}}">
+        <template is="movieTemplate" data="{{...item}}" />
+      </view>
+    </view>
+  </view>
+</template>

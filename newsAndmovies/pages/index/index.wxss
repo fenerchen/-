@@ -1,0 +1,36 @@
+/**index.wxss**/
+page{
+  background: #b3d4db;
+}
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.img{
+  margin-top: 60rpx;
+  width:128rpx;
+  height:128rpx;
+  border-radius: 50%;
+  background-size:cover;
+}
+.name{
+  display: block;
+  text-align: center;
+
+}
+.txt{
+margin-top:200rpx;
+border:1px solid #405f80;
+height: 80rpx;
+width:300rpx;
+border-radius: 6rpx;
+line-height: 80rpx;
+text-align: center;
+color: green;
+}
+.start{
+  background: #405f80;
+  color: #fff;
+}

@@ -1,0 +1,12 @@
+@import "./moreMovieTemplate/moreMovieTemplate.wxss";
+
+.moreMovies-list {
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 30rpx;
+  margin-bottom: 10rpx;
+  height: 1320rpx;
+}

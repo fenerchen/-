@@ -1,0 +1,18 @@
+<!--pages/posts/posts.wxml-->
+<import src='post-template/post-template.wxml' />
+<view>
+  <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoplay}}' interval='{{interval}}' duration='{{duration}}' class='swiper' vertical="{{false}}" catchtap='onSwiperTap'>
+    <block wx:for="{{imgUrls}}" wx:key='*this'>
+      <swiper-item>
+        <image id='e' src='{{item}}' class='slide-image' data-swiperId='{{index}}' ></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <block wx:for="{{newsimgUrls}}" wx:key='*this'>
+    <view catchtap="onPostTap" data-postId="{{item.postid}}">
+      <template is="post-tempalte" data="{{...item}}" />
+      <!-- <template is="reading-tempalte" data="{{reading}}" data-id='{{index}}'/>  -->
+    </view>
+  </block>
+</view>

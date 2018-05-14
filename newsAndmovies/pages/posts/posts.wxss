@@ -1,0 +1,13 @@
+/* pages/posts/posts.wxss */
+/* 引入样式 */
+@import 'post-template/post-template.wxss'
+page{
+  background: #ededed;
+}
+.swiper,.slide-image{
+  width:750rpx;
+  height: 380rpx;
+}
+
+
+

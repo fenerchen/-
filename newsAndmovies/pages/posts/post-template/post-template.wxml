@@ -1,0 +1,23 @@
+<template name='post-tempalte'>
+  <view class='news-list'>
+    <view class='author-info com-padding'>
+      <image src='{{imgurl}}' class='header-img '></image>
+      <text>{{date}}</text>
+    </view>
+    <view>
+      <image src='{{imgurl}}' class='news-img'></image>
+      <text class='news-content'>{{content}}</text>
+    </view>
+    <view class='like com-padding'>
+      <view class='inline'>
+        <image src='../../img/like.png' class='small-img' mode='{{position}}'></image>
+        <text>{{like_num}}</text>
+      </view>
+      <view class='inline'>
+        <image src='../../img/eye.png' class='small-img'></image>
+        <text>{{eye_num}}</text>
+      </view>
+    </view>
+  </view>
+</template>
+<!-- <template name='reading-tempalte'></template> -->

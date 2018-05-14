@@ -1,0 +1,25 @@
+
+<view class="detail-content">
+  <view class='nav-img'>
+    <image src='{{detail.detail_img}}' class='detail-img'></image>
+    <image src='{{isPlayMusic?"../../../img/start.png":"../../../img/music.png"}}' class='music-img' catchtap='onMusicTap'></image>
+  </view>
+  <view class='author-inf'>
+    <image src='{{detail.detail_img}}' class='header-img'></image>
+    <text class='author-name' style='font-size:38rpx;'>{{detail.author}}</text>
+    <text>{{detail.text}}</text>
+    <text>{{detail.date}}</text>
+  </view>
+  <view class='title'>{{detail.title}}</view>
+  <view class='others-inf'>
+    <view class='aligin-line'></view>
+    <view class='share-comment'>
+      <image src='../../../img/share1.png' bindtap='onShareTap'></image>
+      <image wx:if="{{collected}}" src='../../../img/collection.png' bindtap='onCollectionTap' ></image>
+      <image wx:else src='../../../img/oncollection.png' bindtap='onCollectionTap' ></image>
+    </view>
+  </view>
+  <view class='news-content'>
+    <text>{{detail.detail_cont}}</text>
+  </view>
+</view>

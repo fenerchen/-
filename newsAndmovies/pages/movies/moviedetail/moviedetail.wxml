@@ -1,0 +1,65 @@
+<import src="../stars/stars.wxml" />
+<view class='moviedetail-container'>
+  <view class='header'>
+    <!-- <view class='header' style='background:#ccc;'>  -->
+
+    <image class='header-bg' src="{{movieDetailImg}}" mode='aspectFill'> </image>
+
+    <view class='header-left com'>
+      <view class='header-title'>{{movieDetailTitle}}</view>
+      <view class='header-place'>{{movieDetailplace}} - {{movieDetailTime}}</view>
+      <view class='header-like'>
+        <text> <text class='like'>{{likes}}</text>喜欢</text>
+        <text> <text class='comment'>{{comment}}</text>条评论</text>
+      </view>
+    </view>
+    <view class='header-right com'>
+      <image src='{{movieDetailImg}}' class='header-img'></image>
+    </view>
+  </view>
+  <view class='outline'>
+    <view class='movieTitle com' style="margin-top: 60rpx;">{{movieDetailTitle}}</view>
+    <view class=' com outline-com'>
+      <text class='score-text'>评分: </text>
+      <template is="starsTemplate" data="{{score}}" class="score" />
+    </view>
+    <view class=' outline-com com'>
+      <text>导演: </text>
+      <text>{{director}}</text>
+    </view>
+    <view class='com outline-com'>
+      <text>主演: </text>
+      <text>{{actors}}</text>
+    </view>
+    <view class='outline-type com outline-com'>
+      <text>类型: </text>
+      <text>{{movietype}}</text>
+    </view>
+  </view>
+  <view class='summary '>
+
+    <view class='summary-title com' style="margin-top:30rpx;">剧情简介</view>
+    <view class='summary-text com'>
+      <text>{{summary}}</text>
+      <text style='color:#00f' bindtap='onSummaryMoreTap'>{{down_up}}</text>
+    </view>
+
+  </view>
+  <view class='actor com'>
+    <view class='actor-title '>影人</view>
+
+    <scroll-view scroll-x="{{true}}">
+      <view class='actor-img'>
+        <view wx:for="{{imgUrls}}" wx:key='*this'>
+
+          <image src='{{item.url}}' class='slide-image' data-swiperId='{{index}}'></image>
+          <text class='actor-name'>{{item.name}}</text>
+          <!-- <image src='{{item}}' class='slide-image' data-swiperId='{{index}}'></image> -->
+          <!-- </swiper-item> -->
+        </view>
+      </view>
+    </scroll-view>
+
+    <!-- </swiper> -->
+    </view>
+  </view>

@@ -1,0 +1,43 @@
+{
+  "pages": [
+   
+    "pages/movies/movies",
+    "pages/index/index",
+    "pages/posts/posts",
+    "pages/posts/post-detail/post-detail",
+    "pages/movies/more/more",
+    "pages/movies/moviedetail/moviedetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#405f80",
+    "navigationBarTitleText": "个人主页",
+    "navigationBarTextStyle": ""
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#eee",
+    "color": "#999",
+    "selectedColor": "#405fb0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/img/ciwei0.png",
+        "selectedIconPath": "/img/ciwei.png"
+      },
+      {
+        "pagePath": "pages/posts/posts",
+        "text": "文章列表",
+        "iconPath": "/img/read0.png",
+        "selectedIconPath": "/img/read.png"
+      },
+      {
+        "pagePath": "pages/movies/movies",
+        "text": "电影",
+        "iconPath": "/img/movie0.png",
+        "selectedIconPath": "/img/movie.png"
+      }
+    ]
+  }
+}
