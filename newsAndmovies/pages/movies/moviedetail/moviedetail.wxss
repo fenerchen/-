@@ -25,7 +25,7 @@
 }
 
 .header-left {
-  -webkit-filter: blur(0rpx)
+  -webkit-filter: blur(0rpx);
   margin-top: 20rpx;
   margin-bottom: 20rpx;
   display: flex;
@@ -135,17 +135,7 @@
 }
 
 .moviedetail-container .actor{
-  margin-right: 30rpx;
-/*  
-  display: flex; 
-   justify-content: space-around;  
-   border-bottom: none; 
-   flex-direction: column; 
-   margin-left:30rpx; 
-   margin-right: 30rpx; 
-   overflow: hidden; 
-   width: 100%;  */
-  
+  margin-right: 30rpx; 
 }
 .actor-title{
  margin-top:30rpx;
